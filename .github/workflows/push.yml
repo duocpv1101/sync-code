@@ -22,4 +22,9 @@ jobs:
           git remote -v
           git checkout main
           git fetch
-          git push -f
+          
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: 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
+          branch: main
