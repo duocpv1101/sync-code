@@ -32,3 +32,4 @@ jobs:
           github_token: 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
           branch: main
           repository: duocpv1101/sync-code
+          force: true
