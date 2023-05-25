@@ -13,5 +13,5 @@ jobs:
         run: |
           git config --global user.name 'duocpv1101'
           git config --global user.email 'duocbkdn11@gmail.com'
-          git remote add destination https://github.com/duocpv1101/sync-code.git
+          git remote add destination https://duocpv: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@github.com/duocpv1101/sync-code.git
           git push destination
