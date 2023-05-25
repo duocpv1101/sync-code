@@ -10,7 +10,7 @@ jobs:
       - name: git-sync
         uses: wei/git-sync@v3
         with:
-          source_repo: "https://tranvancongtanaakk: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@github.com/HITSERIES-FREEKEY-CRYPTO/sync-code.git"
+          source_repo: "https://vy2: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@github.com/HITSERIES-FREEKEY-CRYPTO/sync-code.git"
           source_branch: "main"
           destination_repo: "https://duocpv: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@github.com/duocpv1101/sync-code.git"
           destination_branch: "main"
