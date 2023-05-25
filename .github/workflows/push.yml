@@ -20,10 +20,10 @@ jobs:
           git remote set-url origin https://duocpv1101:${{ secrets.DUOCPV_TOKEN_2 }}@github.com/duocpv1101/sync-code.git
           git checkout main
           git fetch
-          git pull
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.DUOCPV_TOKEN_2 }}
           repository: duocpv1101/sync-code
-          branch: main 
+          branch: main
+          force: true
