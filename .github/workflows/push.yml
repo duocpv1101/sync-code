@@ -20,7 +20,7 @@ jobs:
           ls -al
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git remote set-url origin https://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@github.com/duocpv1101/sync-code.git
+          git remote set-url origin https://duocpv1101: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@github.com/duocpv1101/sync-code.git
           git config --list |grep user
           git remote -v
           git checkout main
