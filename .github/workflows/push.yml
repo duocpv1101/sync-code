@@ -22,4 +22,4 @@ jobs:
           git remote -v
           git checkout main
           git fetch
-          git push
+          git push -f
