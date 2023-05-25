@@ -20,17 +20,9 @@ jobs:
           ls -al
           git config user.email "actions@users.noreply.github.com"
           git config user.name "duocpv1101"
-          git remote set-url origin https://duocpv1101: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@github.com/duocpv1101/sync-code.git
+          git remote set-url origin https://duocpv1101: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@github.com/duocpv1101/sync-code.git
           git config --list |grep user
           git remote -v
           git checkout main
           git fetch
           git push -f
-          
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: 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
-          branch: main
-          repository: duocpv1101/sync-code
-          force: true
