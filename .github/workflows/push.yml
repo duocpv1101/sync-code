@@ -1,1 +1,17 @@
-#tesst
+name: Push to Another GitHub
+on:
+  push:
+    branches:
+      - main
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Push to Another GitHub
+        run: |
+          git config --global user.name 'Duocpv1101'
+          git config --global user.email 'duocbkdn11@gmail.com'
+          git remote add destination https://github.com/duocpv1101/sync-code.git
+          git push destination
