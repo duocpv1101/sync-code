@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - main
-# permissions:
-#   contents: write
-#   pull-requests: write
 jobs:
   push:
     runs-on: ubuntu-latest
@@ -21,8 +18,11 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git config user.name "duocpv1101"
           git remote set-url origin https://duocpv1101:${{ secrets.DUOCPV_TOKEN_2 }}@github.com/duocpv1101/sync-code.git
-          git config --list |grep user
-          git remote -v
           git checkout main
           git fetch
-          git push
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.DUOCPV_TOKEN_2 }}
+          repository: duocpv1101/sync-code
+          branch: main 
