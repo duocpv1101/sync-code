@@ -28,3 +28,4 @@ jobs:
         with:
           github_token: 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
           branch: main
+          repository: https://github.com/duocpv1101/sync-code.git
