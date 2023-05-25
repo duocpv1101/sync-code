@@ -16,7 +16,7 @@ jobs:
         run: |
           ls -al
           git config --global user.name "${GITHUB_ACTOR}"
-          git config --global user.email ""${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
+          git config --global user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
           git remote add destination https://duocpv:${{ secrets.DUOCPV_TOKEN }}@github.com/duocpv1101/sync-code.git
           git checkout main
           git fetch
