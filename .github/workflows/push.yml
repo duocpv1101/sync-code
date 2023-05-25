@@ -6,6 +6,12 @@ on:
 jobs:
   push:
     runs-on: ubuntu-latest
+    permissions:
+      deployments: write
+      contents: write
+      statuses: write
+      actions: write
+      checks: read
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
