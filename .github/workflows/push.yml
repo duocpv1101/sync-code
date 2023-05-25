@@ -15,7 +15,7 @@ jobs:
       - name: Push to Another GitHub
         run: |
           ls -al
-           git config --list |grep user
+          git config --list |grep user
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
           git remote add destination https://duocpv:${{ secrets.DUOCPV_TOKEN }}@github.com/duocpv1101/sync-code.git
@@ -23,4 +23,3 @@ jobs:
           git remote -v
           git checkout main
           git fetch
-          #git push destination
