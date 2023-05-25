@@ -25,7 +25,7 @@ jobs:
           git remote -v
           git checkout main
           git fetch
-          git push
+          git push -f
           
       - name: Push changes
         uses: ad-m/github-push-action@master
