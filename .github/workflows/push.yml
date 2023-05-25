@@ -14,6 +14,6 @@ jobs:
           ls -al
           git config --global user.name 'duocpv1101'
           git config --global user.email 'duocbkdn11@gmail.com'
-          git remote add destination https://duocpv1101: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@github.com/duocpv1101/sync-code.git
+          git remote add destination  https://duocpv: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@github.com/duocpv1101/sync-code.git
           git fetch
           git push destination
