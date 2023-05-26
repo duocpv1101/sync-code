@@ -1,4 +1,4 @@
-name: Push to Another GitHub
+name: Sync to GitHub
 on:
   push:
     branches:
