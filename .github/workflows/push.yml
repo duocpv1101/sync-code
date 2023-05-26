@@ -6,7 +6,7 @@ on:
 jobs:
   push:
     #runs-on: ubuntu-latest
-    runs-on: runner-windows
+    runs-on: runner-aws
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
