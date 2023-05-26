@@ -15,8 +15,8 @@ jobs:
           fetch-depth: 0
       - name: Config Git Credential
         run: |
-          git config user.email "actions@users.noreply.github.com"
-          git config user.name "duocpv1101"
+          git config user.email "pham.van.duoc@tanaakk.com"
+          git config user.name "pham.van.duoc"
       - name: Push to GitHub
         uses: ad-m/github-push-action@v0.6.0
         with:
