@@ -13,15 +13,11 @@ jobs:
           ref: main
           persist-credentials: false
           fetch-depth: 0
-      - name: Push to Another GitHub
+      - name: Config Git Credential
         run: |
-          ls -al
           git config user.email "actions@users.noreply.github.com"
           git config user.name "duocpv1101"
-          # git remote set-url origin https://duocpv1101:${{ secrets.DUOCPV_TOKEN_2 }}@github.com/duocpv1101/sync-code.git
-          # git checkout main
-          # git fetch
-      - name: push changes
+      - name: Push to GitHub
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.DUOCPV_TOKEN_2 }}
