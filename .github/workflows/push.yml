@@ -17,6 +17,7 @@ jobs:
         run: |
           git config user.email "pham.van.duoc@tanaakk.com"
           git config user.name "pham.van.duoc"
+          curl ifconfig.me
       - name: Push to GitHub
         uses: ad-m/github-push-action@v0.6.0
         with:
