@@ -12,7 +12,7 @@ steps:
 
 - script: |
     ls -al
-    git fetch
+    git fetch --unshallow 
     git checkout $(BRANCH)
     git remote remove origin
     git config --global user.name "tranvancongtanaakk"
