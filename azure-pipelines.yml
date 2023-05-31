@@ -1,8 +1,7 @@
 trigger:
-- develop
+- devops2
 - main
-- staging
-- prod
+- devops
 
 pool:
   vmImage: ubuntu-latest
