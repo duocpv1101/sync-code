@@ -1,19 +1,24 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
+- develop
 - main
+- staging
+- prod
 
 pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- checkout: self
+  persistCredentials: true
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    ls -al
+    git fetch
+    git checkout $(BRANCH)
+    git remote remove origin
+    git config --global user.name "tranvancongtanaakk"
+    git config --global user.mail "tran.van.cong@tanaakk.com"
+    git remote add origin https://$(GIT_TOKEN)@github.com/HITSERIES-FREEKEY-CRYPTO/sync-code.git
+    git status
+    git push origin $(BRANCH) -f
+  displayName: "Sync code to github"
